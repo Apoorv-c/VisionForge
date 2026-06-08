@@ -1,5 +1,5 @@
 # VisionForge
-🧠 Image Classification using MobileNetV2 (PyTorch)
+# 🧠 Image Classification using MobileNetV2 (PyTorch)
 
 This project trains a deep learning image classification model using MobileNetV2 with PyTorch.
 It supports custom datasets, performs data augmentation, and includes a training + validation pipeline with progress tracking.
@@ -7,7 +7,7 @@ It supports custom datasets, performs data augmentation, and includes a training
 The trained model is saved along with the class labels for future inference.
 
 
-🚀 Features
+# 🚀 Features
 
 Uses Transfer Learning (MobileNetV2 pretrained on ImageNet)
 
@@ -23,7 +23,7 @@ Progress bars with tqdm
 
 Saves model weights + class labels
 
-⚙️ Requirements
+# ⚙️ Requirements
 
 Install the required libraries:
 
@@ -34,7 +34,7 @@ Optional (recommended for faster loading):
 pip install accelerate
 
 
-🧩 Configuration
+# 🧩 Configuration
 
 Before running the script, update these paths in the code:
 
@@ -49,7 +49,7 @@ EPOCHS = 20
 LR = 0.001
 
 
-🖼 Data Augmentation
+# 🖼 Data Augmentation
 
 The following augmentations are applied to training images:
 
@@ -64,7 +64,7 @@ Color jitter (brightness, contrast, saturation)
 This improves model generalization.
 
 
-🏋️ Training the Model
+#🏋️ Training the Model
 
 Run the training script:
 
@@ -77,7 +77,7 @@ Train Loss: 0.5432 | Train Acc: 0.8123
 Val Loss: 0.4312 | Val Acc: 0.8541
 
 
-💾 Model Saving
+# 💾 Model Saving
 
 After training completes, the model is saved as:
 
@@ -97,7 +97,7 @@ Example saved format:
 }
 
 
-🖥 Device Support
+# 🖥 Device Support
 
 The script automatically selects:
 
@@ -112,7 +112,7 @@ or
 Using device: cpu
 
 
-📊 Model Architecture
+# 📊 Model Architecture
 
 The project uses:
 
@@ -128,7 +128,7 @@ Good performance on small datasets
 
 The final classifier layer is modified to match the number of dataset classes.
 
-🧠 Transfer Learning
+# 🧠 Transfer Learning
 
 The model loads pretrained weights:
 
